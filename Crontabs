@@ -5,11 +5,3 @@
 30 23 * * * rsync --ignore-existing -av --progress --itemize-changes --delete /media/braeden/Media/ /home/braeden/MediaBackup
 10 23 * * * rsync --ignore-existing -av --progress --itemize-changes --delete /home/braeden/Videos /media/braeden/Media/Video\Editing/
 20 23 * * * rsync --ignore-existing -av --progress --itemize-changes --delete /home/braeden/Pictures /media/braeden/Media/Pictures/PicturesHDD/
-
-#Laptop - in root crontab
-
-0 * * 0 python hac.py bs1004040 **password_here** >> grades.txt 
-
-#hac.py - written by Lucas Manning - Modifications below 
-#ln 2: "import time"
-#ln 97: "print(time.strftime("Date: %m/%d/%Y \n"))"
